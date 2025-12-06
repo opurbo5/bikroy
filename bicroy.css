@@ -1,0 +1,465 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* start of header */
+section header{
+    position: absolute;
+    width: 100%;
+    height: 230px;
+    background-color: rgba(20, 151, 119);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+/* section header .logo{
+    height: 80px;
+} */
+section header .logo .bi{
+    position: absolute;
+    width: 150px;
+    top: -40px;
+    left: 100px;
+}
+section header .frist{
+    position: absolute;
+    top: 25px;
+    left: 270px;
+}
+section header .frist .all{
+    text-decoration: none;
+    color: white;
+    padding-right: 15px;
+}
+section header .frist .btn1{
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid rgb(122, 121, 121);
+    border-radius: 4px;
+    color: white;
+    width: 70px;
+    height: 30px;
+    top: -5px;
+}
+section header .secend{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+
+}
+section header .secend .f1{
+    text-decoration: none;
+    color: white;
+    padding-right: 30px;
+}
+section header .secend .f2{
+    text-decoration: none;
+    color: white;
+    padding-right: 30px;
+}
+section header .secend .btn2{
+    background-color: rgba(255, 200, 0);
+    color: rgb(123, 53, 0);
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+}
+section header .secend .btn2:hover{
+    box-shadow: 5px 5px rgb(139, 136, 122);
+}
+section header .loc{
+    position: relative;
+    display: inline;
+    top: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+section header .loc .location1{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(16, 132, 111);
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+section header .ser{
+    position: absolute;
+    top: 145px;
+    margin-left: 90px;
+    
+}
+section header .ser .int{
+    position: relative;
+    width: 500px;
+    height: 30px;
+    padding: 18px;
+    padding-right: 130px;
+    border-radius: 40px;
+    border: none;
+}
+section header .ser .fa-magnifying-glass{
+    position: relative;
+    top: 3px;
+    right: 70px;
+    background-color: rgba(255, 200, 0);
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+/* End of header  */
+section main{
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    top: 230px;
+    background-color: rgb(235, 235, 235);
+}
+section main h4{
+    text-align: left;
+    margin-left: 20px;
+
+}
+section main .elements {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px;
+    padding: 0 100px;
+}
+
+/* CHILD ITEM (The Box - Centering applied here) */
+section main .elements .items {
+    position: relative; 
+    display: flex;
+    flex-direction: column; 
+    /* align-items: center;  */
+    justify-content: center; 
+    text-align: start;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(235, 235, 235); 
+    padding: 20px 10px;
+    border-radius: 8px;
+    min-height: 100px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+section main .elements .items:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+section main .elements .items i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: rgba(20, 151, 119);
+}
+/* Resetting margins for inner text elements */
+section main .elements .items p,
+section main .elements .items span {
+    margin: 0;
+}
+section main .elements .items p {
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    top: 50px;
+    margin-left: 50px;
+}
+section main .elements .items span {
+    position: absolute;
+    font-size: 12px;
+    color: #777;
+    align-items: center;
+    justify-content: center;
+    top: 85px;
+    margin-left: 50px;
+}
+/* End of main  */
+/* start of contant */
+section .contant{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    height: 330px;
+    top: 920px;
+}
+section .contant .featured{
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    left: 25px;
+}
+section .contant .money{
+    position: relative;
+    width: 42%;
+    height: 250px;
+    top: 32px;
+    left: 9%;
+    box-shadow: 0 2px 5px rgb(170, 170, 170);
+    
+}
+section .contant .money .micon{
+    position: absolute;
+    top: 40px;
+    left: 25px;
+}
+section .contant .money .start{
+    position: absolute;
+    top: 40px;
+    left: 43%;
+    font-size: 25px;
+    font-weight: bold;
+}
+section .contant .money .op{
+    position: absolute;
+    top: 100px;
+    left: 43%;
+    color: #5a5a5a;
+}
+section .contant .money .post{
+    position: absolute;
+    top: 180px;
+    left: 43%;
+    width: 210px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(255, 200, 0);
+    font-size: 15px;
+    font-weight: bold;
+}
+section .contant .jobs{
+    position: relative;
+    width: 40%;
+    box-shadow: 0 2px 5px rgb(170, 170, 170);
+    height: 250px;
+    top: 32px;
+    left: 9%;
+}
+section .contant .jobs .jicon{
+    position: absolute;
+    width: 300px;
+    top: 10px;
+    left: 10px;
+}
+section .contant .jobs .ki{
+    position: absolute;
+    top: 95px;
+    left: 45px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #645f5f;
+}
+section .contant .jobs .learn{
+    position: absolute;
+    top: 190px;
+    left: 45px;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(88, 88, 243);
+    font-size: 20px;
+    font-weight: bold;
+}
+/* end of contant */
+/* start of quick */
+section .quick{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(235, 235, 235);
+    display: grid;
+    gap: 15px;
+    top: 845px;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+section .quick .quick_link{
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+section .quick .one{
+    position: absolute;
+    left: 9%;
+    top: 30px;
+    width: 20%;
+    height: 200px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 10px;
+}
+section .quick .two{
+    position: absolute;
+    left: 30%;
+    top: 30px;
+    width: 20%;
+    height: 200px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 10px;
+}
+section .quick .three{
+    position: absolute;
+    left: 51%;
+    top: 30px;
+    width: 20%;
+    height: 200px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 10px;
+}
+section .quick .four{
+    position: absolute;
+    left: 72%;
+    top: 30px;
+    width: 20%;
+    height: 200px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 10px;
+}
+section .quick h5{
+    position: absolute;
+    left: 12px;
+    font-size: 15px;
+}
+section .quick p{
+    position: absolute;
+    left: 12px;
+    top: 40px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+/* end of quick */
+section .info{
+    position: absolute;
+    top: 1495px;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(238, 238, 238);
+}
+section .info .all_info{
+    margin-left: 100px;
+    margin-right: 70px;
+}
+/* end of quick */
+section footer{
+    position: absolute;
+    background-color: rgb(238, 238, 238);
+    top: 1640px;
+    width: 100%;
+    height: 250px;
+}
+section footer .foot1{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    top: 20px;
+    left: 4%;
+
+}
+section footer .foot1 .last{
+    position: relative;
+    width: 150px;
+    height: 200px;
+}
+section footer .foot1 .last .new{
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+section footer .foot1 .last .lasti{
+    position: absolute;
+    top: 40px;
+    left: 5px;
+    text-decoration: none;
+    color: black;
+    
+}
+section footer .foot1 .last .lastia{
+    position: absolute;
+    top: 70px;
+    left: 5px;
+    text-decoration: none;
+    color: black;
+    
+}
+section footer .foot1 .last .lastib{
+    position: absolute;
+    top: 100px;
+    left: 5px;
+    text-decoration: none;
+    color: black;
+    
+}
+section footer .foot1 .last .lastic{
+    position: absolute;
+    top: 130px;
+    left: 5px;
+    text-decoration: none;
+    color: black;
+    
+}
+section footer .foot1 .last .lastid{
+    position: absolute;
+    top: 160px;
+    left: 5px;
+    text-decoration: none;
+    color: black;
+    
+}
+section footer .foot1 .last_img{
+    position: absolute;
+    width: 150px;
+    left: -11px;
+    top: 120px;
+}
+section footer .foot1 .google_play{
+    position: absolute;
+    width: 150px;
+    top: 30px;
+    left: -3px;
+}
+section footer .foot1 .apple{
+    position: absolute;
+    width: 170px;
+    top: 55px;
+    left: -13px;
+}
+section footer .foot2{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid rgb(141, 141, 141);
+    top: 20px;
+    background-color: rgb(238, 238, 238);
+}
+section footer .foot2 .copyright{
+    position: absolute;
+    top: 25px;
+    left: 45px;
+}
+section footer .foot2 .last_ar_img{
+    position: absolute;
+    width: 150px;
+    top: -25px;
+    right: 20px;
+}
